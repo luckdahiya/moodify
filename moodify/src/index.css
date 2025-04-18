@@ -1,0 +1,27 @@
+/* ─── GLOBAL RESET ───────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;      /* blocks page scrollbars */
+    height: 100%;
+    width: 100%;
+  }
+/* Full-width, full-height layout */
+/* #root {
+  width: 100%;
+  height: 100%;
+} */
+
+
+/* Keep all boxes within the proper boundaries */
+* {
+  box-sizing: border-box;
+}

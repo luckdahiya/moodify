@@ -1,0 +1,63 @@
+/* Songs.css */
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Sit your page flush beneath the sidebar */
+.songs-page {
+  position: fixed;         /* cover entire available area */
+  top: 0;
+  left: 250px;             /* sidebar width */
+  right: 0;                /* fill to right edge */
+  bottom: 0;               /* fill to bottom */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
+  overflow: hidden;        /* no global scroll */
+}
+
+/* Heading */
+.songs-heading {
+  margin: 2rem 0 1rem;
+  font-size: 2.5rem;
+  color: #1db954;
+}
+
+/* Video grid container */
+.video-box {
+  flex: 1;                 /* fill remaining vertical space */
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  overflow-y: auto;        /* vertical scroll inside only */
+  padding-bottom: 2rem;
+}
+
+/* Video cards */
+.video-container {
+  flex: 1 1 300px;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.video-container:hover {
+  transform: scale(1.05);
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}

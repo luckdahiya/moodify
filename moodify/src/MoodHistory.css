@@ -1,0 +1,61 @@
+.mood-history-wrapper {
+    /* margin-top: 40px; */
+    padding: 30px;
+    background: #f8f8ff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(93, 52, 167, 0.1);
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .mood-history-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #5f27cd;
+    font-weight: bold;
+  }
+  
+  .mood-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .mood-card {
+    background: linear-gradient(to right, #a18cd1, #fbc2eb);
+    padding: 20px;
+    width: 180px;
+    border-radius: 15px;
+    color: #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .mood-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .mood-emoji {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .mood-type {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .mood-time {
+    font-size: 0.9rem;
+    opacity: 0.85;
+  }
+  
+  .no-history {
+    font-size: 1.1rem;
+    color: #999;
+  }
+  
