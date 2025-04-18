@@ -1,0 +1,93 @@
+/* Wrapper around entire profile page */
+.profile-page-wrapper {
+  min-height: 100vh;
+  padding: 20px;
+  background: linear-gradient(135deg, #A770EF, #CF8BF3, #FDB99B);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* start at top */
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+/* The “card” that holds your form */
+.profile-form {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Title inside the form */
+.profile-form .profile-title {
+  margin: 0;
+  font-size: 2rem;
+  color: #2c2c54;
+  text-align: center;
+}
+
+/* Wrapper for custom dropdown + arrow */
+.custom-dropdown-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+/* Styled <select> element */
+.mood-dropdown {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1.1rem;
+  border-radius: 12px;
+  border: none;
+  background: rgba(255, 255, 255, 0.6);
+  color: #2c2c54;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom arrow as separate element */
+.dropdown-arrow {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 1.2rem;
+  color: #2c2c54;
+}
+
+/* Hover & focus for dropdown */
+.mood-dropdown:hover,
+.mood-dropdown:focus {
+  background: rgba(255, 255, 255, 0.9);
+  outline: none;
+}
+
+/* Save button styling */
+.save-mood-button {
+  padding: 12px 20px;
+  font-size: 1.1rem;
+  background: linear-gradient(to right, #ff758c, #ff7eb3);
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(255, 117, 140, 0.3);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.save-mood-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(to right, #ff6a8a, #ff66a8);
+}
